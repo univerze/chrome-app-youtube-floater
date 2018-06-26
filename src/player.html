@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="player.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<div class="player">
+    <div class="controls">
+        <div class="pull-left">
+            <input id="input" placeholder="Paste URL here"/>
+        </div>
+        <div class="pull-right">
+            <button class="control" id="pin">unpin</button>
+            <button class="control" id="close">&times;</button>
+        </div>
+    </div>
+
+    <webview id="webview" src></webview>
+
+    <div id="welcome">
+        <p>Welcome to Floater for Youtube&trade;</p>
+        <small>
+            To start, paste a valid video URL into the input.<br>
+            <br>
+            Drag the window by the header.
+        </small>
+    </div>
+</div>
+
+<script src="eventListener.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.player {
+    background: black;
+    width: 100%;
+    height: 100%;
+}
+
+.controls {
+    -webkit-app-region: drag;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 3px 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.player:hover .controls {
+    opacity: 1;
+}
+
+.control {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 12px;
+}
+
+.control:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.pull-left {
+    float: left;
+    width: 50%;
+}
+
+.pull-right {
+    float: right;
+}
+
+#input {
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+#webview {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#welcome {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
